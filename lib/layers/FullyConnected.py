@@ -49,7 +49,6 @@ class FullyConnected:
         input_tensor: numpy array
             input to the corresponding layer
         
-
         Returns:
         --------
         output_tensor: numpy array
