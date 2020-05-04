@@ -99,9 +99,9 @@ class FullyConnected:
         
         Args:
         -----
-        weights_initializer: object
+        weights_initializer: Initializer object
             object that initializes the weights
-        bias_initializer: object
+        bias_initializer: Initializer object
             object that initializes the bias
         """
 

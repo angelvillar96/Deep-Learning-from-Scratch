@@ -4,6 +4,8 @@ ReLU Activation function
 @author: Angel Villar-Corrales
 """
 
+import numpy as np
+
 
 class ReLU:
     """
