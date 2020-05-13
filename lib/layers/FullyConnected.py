@@ -112,3 +112,12 @@ class FullyConnected:
         self.weightGradient = np.concatenate((weights, bias), axis=0)
 
         return
+
+    def __src__(self):
+        """
+        Method used to print the layer in a human readable way
+        """
+
+        returned_message = f"{self.__class__.__name__}({self.input_size},{self.output_size})"
+
+        return returned_message

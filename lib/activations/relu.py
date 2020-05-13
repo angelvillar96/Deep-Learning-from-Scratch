@@ -45,7 +45,7 @@ class ReLU:
         return output_tensor
 
 
-    def backward(self, input_error)
+    def backward(self, input_error):
         """
         Backward pass through the ReLU function. We simply set negatives value to zero,
         since the derivative of the positive stays untouched
@@ -66,3 +66,13 @@ class ReLU:
         backprop_error[negativ_idx] = 0
 
         return backprop_error
+
+
+    def __src__(self): 
+        """
+         Method used to print the activation in a human readable way
+        """
+
+        returned_message = f"{self.__class__.__name__}()"
+
+        return returned_message
