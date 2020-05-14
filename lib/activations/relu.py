@@ -6,8 +6,9 @@ ReLU Activation function
 
 import numpy as np
 
+from lib.activations.activation import Activation
 
-class ReLU:
+class ReLU(Activation):
     """
     Class implementing the Rectified Linear Unit activation function
     """
@@ -17,6 +18,8 @@ class ReLU:
         Initializer of the relu object
         """
 
+        Activation.__init__(self)
+        
         self.previous_input = None
 
         return
@@ -34,7 +37,7 @@ class ReLU:
         Returns:
         --------
         output_tensor: numpy array
-            input to the corresponding layer
+            result of applying the activation to the input
         """
 
         self.previous_input = input_tensor
@@ -67,12 +70,3 @@ class ReLU:
 
         return backprop_error
 
-
-    def __src__(self): 
-        """
-         Method used to print the activation in a human readable way
-        """
-
-        returned_message = f"{self.__class__.__name__}()"
-
-        return returned_message

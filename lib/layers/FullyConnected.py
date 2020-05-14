@@ -118,6 +118,7 @@ class FullyConnected:
         Method used to print the layer in a human readable way
         """
 
-        returned_message = f"{self.__class__.__name__}({self.input_size},{self.output_size})"
+        returned_message = f"{self.__class__.__name__}(input_size={self.input_size}, " \
+                         + f"output_size={self.output_size})"
 
         return returned_message
